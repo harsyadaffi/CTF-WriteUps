@@ -1,0 +1,978 @@
+REVERSE ENGINEERING GREENIE
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<br>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#7ad05e;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#6ac050;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#84d76a;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#96e77b;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#1ee000;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#5cae3f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#63b848;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#a8f78d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#72c856;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#b1ff96;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#54aa33;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#3fbc25;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#36c820;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#baff9f;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#8ddf73;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#28d900;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#4ab52d;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#2fcf10;margin:0;padding:0;'></div>
+<div style='display:inline-block;width:20px;height:20px;background:#9fef84;margin:0;padding:0;'></div>
+<br>
+</div></body></html>                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ 
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ cat chall.py 
+import random, string
+
+alphabet = string.ascii_letters + "0123456789{}_"
+ai = {c:i for i,c in enumerate(alphabet)}
+flag = open("flag.txt").read().strip()
+
+PALETTE = [
+    "#1ee000",
+    "#28d900",  
+    "#2fcf10",  
+    "#36c820",  
+    "#3fbc25",  
+    "#4ab52d",
+    "#54aa33",  
+    "#00ff00", 
+    "#5cae3f", 
+    "#63b848", 
+    "#6ac050",  
+    "#72c856", 
+    "#7ad05e", 
+    "#84d76a",  
+    "#8ddf73", 
+    "#96e77b",  
+    "#9fef84",  
+    "#a8f78d",  
+    "#b1ff96", 
+    "#baff9f",
+]
+
+grid = [[random.choice([i for i in range(len(PALETTE)) if i != 7]) for _ in range(len(alphabet))] for _ in range(len(flag) ** 2)]
+for r, ch in enumerate(flag):
+    grid[r][ai[ch]] = [*range(7,8)][0]
+
+html = ["<html><body>"]
+html.append("<div style='font-size:0;'>")
+
+for row in grid:
+    for ci in row:
+        html.append(
+            f"<div style='display:inline-block;width:20px;height:20px;background:{PALETTE[ci]};margin:0;padding:0;'></div>"
+        )
+    html.append("<br>")
+html.append("</div></body></html>")
+
+with open("flag.html", "w") as f:
+    f.write("\n".join(html))                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ python3 decoder.py 
+python3: can't open file '/mnt/hgfs/CTF/decoder.py': [Errno 2] No such file or directory
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ cat > decoder.py << 'EOF'
+import string
+import re
+
+# Alphabet yang sama dengan chall.py
+alphabet = string.ascii_letters + "0123456789{}_"
+
+# Baca flag.html
+with open("flag.html", "r") as f:
+    html = f.read()
+
+# Extract semua hex colors
+colors = re.findall(r'background:(#[0-9a-f]{6})', html)
+
+# Target color (pure green)
+TARGET = "#00ff00"
+
+# Hitung jumlah kolom per baris (panjang alphabet)
+cols = len(alphabet)
+
+# Decode flag
+flag = []
+row_num = 0
+for i in range(0, len(colors), cols):
+    row = colors[i:i+cols]
+
+    # Cari apakah ada target color di baris ini
+    if TARGET in row:
+        # Temukan posisi kolom
+        col_pos = row.index(TARGET)
+        # Convert ke karakter
+        char = alphabet[col_pos]
+        flag.append(char)
+        print(f"Row {row_num}: Found '{char}' at column {col_pos}")
+
+    row_num += 1
+
+# Print flag
+print("\n" + "="*50)
+print("FLAG FOUND:")
+print(''.join(flag))
+print("="*50)
+EOF
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ python3 decoder.py 
+Row 0: Found 'H' at column 33
+Row 1: Found 'a' at column 0
+Row 2: Found 'c' at column 2
+Row 3: Found 'k' at column 10
+Row 4: Found 'f' at column 5
+Row 5: Found 'e' at column 4
+Row 6: Found 's' at column 18
+Row 7: Found 't' at column 19
+Row 8: Found '0' at column 52
+Row 9: Found 'x' at column 23
+Row 10: Found '0' at column 52
+Row 11: Found '9' at column 61
+Row 12: Found '{' at column 62
+Row 13: Found 'x' at column 23
+Row 14: Found 'X' at column 49
+Row 15: Found 'x' at column 23
+Row 16: Found '_' at column 64
+Row 17: Found 'm' at column 12
+Row 18: Found 'a' at column 0
+Row 19: Found 't' at column 19
+Row 20: Found 'c' at column 2
+Row 21: Found 'h' at column 7
+Row 22: Found 'a' at column 0
+Row 23: Found 'l' at column 11
+Row 24: Found 'o' at column 14
+Row 25: Found 'v' at column 21
+Row 26: Found 'e' at column 4
+Row 27: Found 'r' at column 17
+Row 28: Found 's' at column 18
+Row 29: Found 'x' at column 23
+Row 30: Found 'y' at column 24
+Row 31: Found 'z' at column 25
+Row 32: Found '_' at column 64
+Row 33: Found 'x' at column 23
+Row 34: Found 'X' at column 49
+Row 35: Found 'x' at column 23
+Row 36: Found '}' at column 63
+
+==================================================
+FLAG FOUND:
+Hackfest0x09{xXx_matchaloversxyz_xXx}
+==================================================
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ 
