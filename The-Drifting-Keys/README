@@ -1,0 +1,40 @@
+CTF Writeup: Cryptography - The Drifting Key 🔐
+Repositori ini berisi solusi dan skrip untuk tantangan kriptografi berjudul "The Drifting Key" dari ajang Hackfest0x09. Tantangan ini melibatkan teknik enkripsi substitusi dengan kunci yang bergeser (drifting key) berdasarkan indeks karakter.
+
+📝 Deskripsi Tantangan
+Dalam tantangan ini, diberikan sebuah skrip enkripsi (chall.py) dan sebuah file output (output.txt) yang berisi flag terenkripsi. Mekanisme enkripsi menggunakan kunci statis Hackfest0x09, namun nilai pergeserannya berubah seiring dengan posisi indeks karakter dalam pesan.
+
+Detail Mekanisme:
+Key: Hackfest0x09
+
+Shift Logic: (Karakter + Kunci + Indeks) mod 26
+
+Format: Hanya memproses karakter alfabet; simbol dan angka tetap pada posisinya.
+
+📁 Struktur File
+chall.py: Skrip asli yang digunakan untuk mengenkripsi flag.
+
+output.txt: Hasil enkripsi (ciphertext).
+
+decrypt.py: Skrip solusi (solver) yang saya buat untuk mengembalikan ciphertext ke plaintext.
+
+CRYPTOGRAPHY THE DRIFTING KEY.txt: Dokumentasi langkah-langkah penyelesaian.
+
+🚀 Solusi (Writeup)
+Untuk mendapatkan flag, saya membuat skrip dekripsi yang membalikkan proses pergeseran dengan logika:
+Plaintext = (Ciphertext - Kunci - Indeks) mod 26
+
+Eksekusi:
+Bash
+python3 decrypt.py
+Hasil Akhir:
+Ciphertext: {Z0HA_HOL12Q3L_G45_VX5Y_13GRBU}
+
+Plaintext (Flag): {Y0UR_JOU12N3Y_H45_JU5T_13EGUN}
+
+🛠️ Tools Digunakan
+Python 3
+
+PyCryptodome (untuk modul Crypto.Util.number)
+
+Created by [Nama Anda/Username]
