@@ -1,0 +1,14 @@
+┌──(kali㉿kali)-[~]
+└─$ cd /mnt/hgfs/CTF
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ python3 decrypt.py
+Ciphertext: {Z0HA_HOL12Q3L_G45_VX5Y_13GRBU}
+Plaintext:  {Y0UR_JOU12N3Y_H45_JU5T_13EGUN}
+
+FLAG: {Y0UR_JOU12N3Y_H45_JU5T_13EGUN}
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[/mnt/hgfs/CTF]
+└─$ ??????????
+
+{Z0HA_HOL12Q3L_G45_VX5Y_13GRBU}
