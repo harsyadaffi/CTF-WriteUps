@@ -1,0 +1,29 @@
+from secret import FLAG 
+from random import randint
+from Crypto.Util.number import getPrime
+
+KEY = "Hackfest0x09" 
+
+def to_identity_map(a):
+    return ord(a.upper()) - 0x41
+
+def from_identity_map(a):
+    return chr((a % 26) + 0x41)
+
+def encrypt(m, key):
+    c = ''
+    for i in range(len(m)):
+        ch = m[i]
+        if not ch.isalpha():
+            c += ch
+        else:
+            chi = to_identity_map(ch)
+            key_shift = to_identity_map(key[i % len(key)])
+            ech = from_identity_map(chi + key_shift + i)
+            c += ech
+    return c
+
+if __name__ == "__main__":
+    ciphertext = encrypt(FLAG, KEY)
+    with open('output.txt', 'w') as f:
+        f.write(ciphertext + '\n')
