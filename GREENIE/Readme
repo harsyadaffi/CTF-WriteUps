@@ -1,0 +1,48 @@
+CTF Writeup: Reverse Engineering - Greenie 🟢
+Repositori ini berisi dokumentasi dan solusi untuk tantangan Reverse Engineering bernama "Greenie". Tantangan ini unik karena menyembunyikan flag di dalam ribuan kotak berwarna pada sebuah file HTML.
+
+📝 Deskripsi Tantangan
+Diberikan sebuah file flag.html yang berisi ribuan elemen <div> kecil dengan berbagai kode warna Hex. Tugasnya adalah menemukan pola atau "warna target" yang merepresentasikan karakter-karakter flag.
+
+Analisis Kode (chall.py):
+Program menggunakan daftar alfabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789{}_.
+
+Ada sebuah PALETTE warna hijau. Warna target (pure green) adalah #00ff00 (index ke-7).
+
+Flag disembunyikan dengan cara: untuk setiap baris, hanya karakter flag yang diberikan warna #00ff00, sementara karakter lainnya diberi warna acak dari palet.
+
+📁 Struktur File
+flag.html: File target yang berisi ribuan kotak warna (visualisasi flag).
+
+chall.py: Skrip asli untuk menghasilkan tantangan (sebagai referensi).
+
+decoder.py: Skrip solver yang saya buat untuk mengekstrak flag secara otomatis.
+
+REVERSE ENGINEERING GREENIE.txt: Log hasil eksekusi dan temuan selama proses pengerjaan.
+
+🚀 Solusi (Langkah Penyelesaian)
+Karena membaca ribuan kotak warna secara manual sangat tidak efisien, saya menggunakan pendekatan Automated Scraping & Decoding:
+
+Ekstraksi Data: Menggunakan Regex di Python untuk mengambil semua kode warna dari file HTML.
+
+Pemetaan Grid: Menghitung jumlah kolom berdasarkan panjang string alphabet yang digunakan (65 karakter).
+
+Filtering: Memindai setiap baris untuk mencari posisi warna #00ff00.
+
+Konversi: Mengonversi posisi kolom yang ditemukan kembali menjadi karakter alfabet.
+
+Eksekusi Solver:
+Bash
+python3 decoder.py
+Hasil Flag:
+Berdasarkan proses dekripsi baris demi baris:
+Hackfest0x09{xXx_matchalover_xXx}
+
+🛠️ Tools
+Python 3: Digunakan untuk membuat skrip dekoder otomatis.
+
+Regex (re): Untuk pemrosesan teks cepat pada file HTML.
+
+Linux Terminal: Lingkungan eksekusi.
+
+Solved with 💚 by harsyadaffi
