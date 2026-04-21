@@ -1,0 +1,29 @@
+KEY = "Hackfest0x09"
+
+def to_identity_map(a):
+    return ord(a.upper()) - 0x41
+
+def from_identity_map(a):
+    return chr((a % 26) + 0x41)
+
+def decrypt(c, key):
+    m = ''
+    for i in range(len(c)):
+        ch = c[i]
+        if not ch.isalpha():
+            m += ch
+        else:
+            chi = to_identity_map(ch)
+            key_shift = to_identity_map(key[i % len(key)])
+            dch = from_identity_map(chi - key_shift - i)
+            m += dch
+    return m
+
+with open('output.txt', 'r') as f:
+    ciphertext = f.read().strip()
+
+print(f"Ciphertext: {ciphertext}")
+plaintext = decrypt(ciphertext, KEY)
+print(f"Plaintext:  {plaintext}")
+print(f"\nFLAG: {plaintext}")
+
