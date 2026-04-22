@@ -1,0 +1,189 @@
+┌──(kali㉿kali)-[~]
+└─$ nc foggy-cliff.picoctf.net 64614
+===Welcome to the Text Transformations Challenge!===
+
+Your goal: step by step, recover the original flag.
+At each step, you'll see the transformed flag and a hint.
+Enter the correct Linux command to reverse the last transformation.
+
+--- Step 1 ---
+Current flag: KTJxNW85NjQ1LWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj
+Hint: Base64 encoded the string.
+Enter the Linux command to reverse it: ^C 
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~]
+└─$ nc foggy-cliff.picoctf.net 64614
+===Welcome to the Text Transformations Challenge!===
+
+Your goal: step by step, recover the original flag.
+At each step, you'll see the transformed flag and a hint.
+Enter the correct Linux command to reverse the last transformation.
+
+--- Step 1 ---
+Current flag: KTJxNW85NjQ1LWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj
+Hint: Base64 encoded the string.
+Enter the Linux command to reverse it: )2q5o9645-fa01g@ze0sfa4eG-gk3g-ta1ferirE(SGPbpvc
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: S1RKeE5XODVOalExTFdaaE1ERm5RSHBsTUhObVlUUmxSeTFuYXpObkxYUmhNV1psY21seVJTaFRSMUJpY0haag==
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: echo "S1RKeE5XODVOalExTFdaaE1ERm5RSHBsTUhObVlUUmxSeTFuYXpObkxYUmhNV1psY21seVJTaFRSMUJpY0haag==" | base64 -d
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: -d
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: "S1RKeE5XODVOalExTFdaaE1ERm5RSHBsTUhObVlUUmxSeTFuYXpObkxYUmhNV1psY21seVJTaFRSMUJpY0haag==" | 46esab -d        
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: 46esab
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: 46esab 
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: echo "KTJxNW85NjQ1LWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj" | rev
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: ^C
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~]
+└─$ nc foggy-cliff.picoctf.net 64614
+===Welcome to the Text Transformations Challenge!===
+
+Your goal: step by step, recover the original flag.
+At each step, you'll see the transformed flag and a hint.
+Enter the correct Linux command to reverse the last transformation.
+
+--- Step 1 ---
+Current flag: KTJxNW85NjQ1LWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj
+Hint: Base64 encoded the string.
+Enter the Linux command to reverse it: base32
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: base32 -d
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: base64 -d
+Correct!
+
+--- Step 2 ---
+Current flag: )2q5o9645-fa01g@ze0sfa4eG-gk3g-ta1ferirE(SGPbpvc
+Hint: Reversed the text.
+Enter the Linux command to reverse it: rev
+Correct!
+
+--- Step 3 ---
+Current flag: cvpbPGS(Eriref1at-g3kg-Ge4afs0ez@g10af-5469o5q2)
+Hint: Replaced underscores with dashes.
+Enter the Linux command to reverse it: tr '-''_'
+Incorrect. Try again.
+Output: [Error] Invalid tr usage. Example: tr 'a-z' 'n-za-m'
+Hint: Try reversing: tr '_' '-'
+
+Enter the Linux command to reverse it: echo "cvpbPGS(Eriref1at-g3kg-Ge4afs0ez@g10af-5469o5q2)" | tr '-' '_'
+Incorrect. Try again.
+Output: [Error] Command not allowed.
+Hint: Try reversing: tr '_' '-'
+
+Enter the Linux command to reverse it: tr '-' '_'
+Correct!
+
+--- Step 4 ---
+Current flag: cvpbPGS(Eriref1at_g3kg_Ge4afs0ez@g10af_5469o5q2)
+Hint: Replaced curly braces with parentheses.
+Enter the Linux command to reverse it: tr '()' '{}'
+Correct!
+
+--- Step 5 ---
+Current flag: cvpbPGS{Eriref1at_g3kg_Ge4afs0ez@g10af_5469o5q2}
+Hint: Applied ROT13 to letters.
+Enter the Linux command to reverse it:                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~]
+└─$ nc foggy-cliff.picoctf.net 64614
+foggy-cliff.picoctf.net [3.15.249.208] 64614 (?) : Connection refused
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~]
+└─$ nc foggy-cliff.picoctf.net 64614
+foggy-cliff.picoctf.net [3.15.249.208] 64614 (?) : Connection refused
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~]
+└─$ nc foggy-cliff.picoctf.net 63780
+===Welcome to the Text Transformations Challenge!===
+
+Your goal: step by step, recover the original flag.
+At each step, you'll see the transformed flag and a hint.
+Enter the correct Linux command to reverse the last transformation.
+
+--- Step 1 ---
+Current flag: KTJxNW85NjQ1LWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj
+Hint: Base64 encoded the string.
+Enter the Linux command to reverse it: base64
+Incorrect. Try again.
+Output: S1RKeE5XODVOalExTFdaaE1ERm5RSHBsTUhObVlUUmxSeTFuYXpObkxYUmhNV1psY21seVJTaFRS
+MUJpY0haag==
+Hint: Try reversing: base64
+
+Enter the Linux command to reverse it: base64 -d
+Correct!
+
+--- Step 2 ---
+Current flag: )2q5o9645-fa01g@ze0sfa4eG-gk3g-ta1ferirE(SGPbpvc
+Hint: Reversed the text.
+Enter the Linux command to reverse it: rev
+Correct!
+
+--- Step 3 ---
+Current flag: cvpbPGS(Eriref1at-g3kg-Ge4afs0ez@g10af-5469o5q2)
+Hint: Replaced underscores with dashes.
+Enter the Linux command to reverse it: tr '-' '_'
+Correct!
+
+--- Step 4 ---
+Current flag: cvpbPGS(Eriref1at_g3kg_Ge4afs0ez@g10af_5469o5q2)
+Hint: Replaced curly braces with parentheses.
+Enter the Linux command to reverse it: tr '()' '{}'
+Correct!
+
+--- Step 5 ---
+Current flag: cvpbPGS{Eriref1at_g3kg_Ge4afs0ez@g10af_5469o5q2}
+Hint: Applied ROT13 to letters.
+Enter the Linux command to reverse it: tr
+Incorrect. Try again.
+Output: [Error] Invalid tr usage. Example: tr 'a-z' 'n-za-m'
+Hint: Try reversing: tr 'a-zA-Z' 'n-za-mN-ZA-M'
+
+Enter the Linux command to reverse it: tr 'a-zaA-ZA' 'n-za-mN-ZA-M'
+Incorrect. Try again.
+Output: picoDUG{Severs1Ng_t3xt_Ur4Nsf0rm@t10Ns_5469b5d2}
+Hint: Try reversing: tr 'a-zA-Z' 'n-za-mN-ZA-M'
+
+Enter the Linux command to reverse it: tr 'a-zA-ZA-Za-z' 'n-za-mN-ZA-MN-ZA-Mn-za-m'   
+Correct!
+
+Congratulations! You've recovered the original flag:
+>>> picoCTF{Revers1ng_t3xt_Tr4nsf0rm@t10ns_5469b5d2}
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~]
+└─$ 
